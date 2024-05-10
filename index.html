@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IIC IPL Quiz Competition</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+     body {
+      
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      
+    }
+
+    .navbar-brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .form-container {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background-color: #dc3545;
+      border-color: #dc3545;
+    }
+
+    .btn-primary:hover {
+      background-color: #c82333;
+      border-color: #bd2130;
+    }
+
+    #rulesModal .modal-dialog {
+      max-width: 600px;
+    }
+
+    #rulesModal .modal-content {
+      background-color: #f8d7da;
+    }
+
+    #rulesModal .modal-header {
+      border-bottom: none;
+    }
+
+    #rulesModal .modal-title {
+      color: #721c24;
+    }
+
+    #rulesModal .modal-body {
+      color: #721c24;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-danger bg-danger">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="https://onlinepay.metbhujbalknowledgecity.ac.in/images/LogowhiteFull.png" class="img-fluid mt-2 mx-2 container" alt /></a>
+      <br>
+    </div>
+  </nav>
+    <h3 class="text-center text-lg "> <b>Institute of Technology - B.Tech</b></h3>
+    <hr>
+
+    <h2 class="text-center">Insitute Innovation Council (IIC) 
+    <br>
+    Intellual Property  Leauge | Quiz Competition</h2>
+  <!-- Modal -->
+  <div class="modal fade" id="rulesModal" tabindex="-1" role="dialog" aria-labelledby="rulesModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="rulesModalLabel">Competition Rules</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Rules Content -->
+          <p>1. Each team must consist of a of three participants only.</p>
+          <p>2. All participants must be students of the same Branch and Year.</p>
+          <p>3. Participants must adhere to the specified time limits for each round.</p>
+          <!-- Add more rules as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <div class="container mt-4">
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSe-uVaCxH2fWqyHnbDMVRwpXxxX03Vj5_1iO85f0Zzji96aEw/formResponse" method="GET">
+      <div class="form-group">
+        <label for="teamLeaderName">Team Leader Name</label>
+        <input type="text" class="form-control" id="teamLeaderName" name="entry.1153318832" placeholder="Enter Team Leader Name" required>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="tel" class="form-control" id="phoneNumber" name="entry.1862010620" placeholder="Enter Phone Number" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email ID</label>
+        <input type="email" class="form-control" id="email" name="entry.1451296433" placeholder="Enter Email ID" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="participant2Name">Participant 2 Name</label>
+          <input type="text" class="form-control" id="participant2Name" name="entry.1002598366" placeholder="Enter Participant 2 Name" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="participant2PhoneNumber">Phone Number</label>
+          <input type="tel" class="form-control" id="participant2PhoneNumber" name="entry.1718128653" placeholder="Enter Participant 2 Phone Number" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="participant3Name">Participant 3 Name</label>
+          <input type="text" class="form-control" id="participant3Name" name="entry.1219605640" placeholder="Enter Participant 3 Name" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="participant3PhoneNumber">Phone Number</label>
+          <input type="tel" class="form-control" id="participant3PhoneNumber" name="entry.1304096529" placeholder="Enter Participant 3 Phone Number" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="branch">Branch</label>
+          <select id="branch" class="form-control" name="entry.1459533029" required>
+            <option selected>Choose...</option>
+            <option value="Computer Science and Design">Computer Science and Design</option>
+            <option value="Automation and Robotics">Automation and Robotics</option>
+            <option value="Civil and Environmental Engineering">Civil and Environmental Engineering</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="year">Year</label>
+          <select id="year" class="form-control" name="entry.945163419" required>
+            <option selected>Choose...</option>
+            <option value="First Year">First Year</option>
+            <option value="Second Year">Second Year</option>
+            <option value="Third Year">Third Year</option>
+          </select>
+        </div>
+      </div>
+     <center><button type="submit" class="btn btn-primary">Submit</button></center>
+    </form>
+  </div>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <!-- Modal Script -->
+      <script>
+        $(document).ready(function(){
+          $('#rulesModal').modal('show');
+        });
+      </script>
+</body>
+</html>
